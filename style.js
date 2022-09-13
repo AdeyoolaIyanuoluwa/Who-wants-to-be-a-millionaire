@@ -27,23 +27,19 @@
  var points = document.getElementById('score') 
  var span = document.querySelectorAll('span')
  var i=0
-//  var score = 0;
 
  function displayQuestion(){
     for (var  a= 0;  a< span.length;a++){
         span[a].style.background = 'none';  
     }
     question.innerHTML= questionBank[i].question;
-    option0.innerHTML = `<button onclick = "calcScore(this)">${questionBank[i].option[0]}</button>`
+    option0.innerHTML = questionBank[i].option[0]
     option1.innerHTML = questionBank[i].option[1]
     option2.innerHTML = questionBank[i].option[2]
     option3.innerHTML = questionBank[i].option[3]
 }
-    // calculate score
-    // && score<questionBank.length
 function calcScore(e){
         if(e.innerHTML=== questionBank[i].answer){
-            // score = score+1;
             document.getElementById(e.id).style.background = 'limegreen';
         }
         else{
@@ -54,7 +50,6 @@ function calcScore(e){
         setTimeout(nextQuestion,300)
     }
 
-    // display nextQuestion
 function nextQuestion(){
     if(i<questionBank.length-1){
          i=i+1
