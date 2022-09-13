@@ -16,20 +16,17 @@
     },
  ]
 
- var question = document.getElementById('question');
- var quizContainer = document.getElementById('quiz-container');
- var scorecard = document.getElementById('scorecard');
- var option0 = document.getElementById('option0')
- var option1 = document.getElementById('option1')
- var option2 = document.getElementById('option2')
- var option3 = document.getElementById('option3')
- var next = document.querySelector('.next')
- var points = document.getElementById('score') 
- var span = document.querySelectorAll('span')
- var i=0
+ let question = document.getElementById('question');
+ let quizContainer = document.getElementById('quiz-container');
+ let option0 = document.getElementById('option0')
+ let option1 = document.getElementById('option1')
+ let option2 = document.getElementById('option2')
+ let option3 = document.getElementById('option3')
+ let span = document.querySelectorAll('span')
+ let i=0
 
  function displayQuestion(){
-    for (var  a= 0;  a< span.length;a++){
+    for (let  a= 0;  a< span.length;a++){
         span[a].style.background = 'none';  
     }
     question.innerHTML= questionBank[i].question;
@@ -56,7 +53,7 @@ function nextQuestion(){
          displayQuestion()
     }
     else{
-        points.innerHTML = score+ '/'+ questionBank.length;
+        // points.innerHTML = score+ '/'+ questionBank.length;
         quizContainer.style.display = 'none'
     }
 }
@@ -86,8 +83,9 @@ function nextQuestion(){
 
 
 
-
-
+//  var next = document.querySelector('.next')
+//  var points = document.getElementById('score') 
+//  var scorecard = document.getElementById('scorecard');
 
      // next button
 
@@ -109,3 +107,11 @@ function nextQuestion(){
 //         answers.appendChild(list)
 //     }
 // }
+//  let Question = question.value;
+//  let quizContainer = quiz-container.value;
+//  let option0 = option0.value;
+//  let option1 = option1.value;
+//  let option2 = option2.value;
+//  let option3 = option3.value;
+//  let span = document.querySelectorAll('span')
+//  let i=0
