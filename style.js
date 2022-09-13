@@ -34,11 +34,10 @@
         span[a].style.background = 'none';  
     }
     question.innerHTML= questionBank[i].question;
-    option0.innerHTML = `<button>${questionBank[i].option[0]}</button>`
+    option0.innerHTML = `<button onclick = "calcScore(this)">${questionBank[i].option[0]}</button>`
     option1.innerHTML = questionBank[i].option[1]
     option2.innerHTML = questionBank[i].option[2]
     option3.innerHTML = questionBank[i].option[3]
-    // stat.innerHTML= "Question"+' '+ (i+1)+' '+ questionBank.length;
 }
     // calculate score
     // && score<questionBank.length
@@ -66,9 +65,36 @@ function nextQuestion(){
         quizContainer.style.display = 'none'
     }
 }
+     displayQuestion()
 
 
-// next button
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     // next button
 
 // next.addEventListener('click',nextQuestion);
 
@@ -88,4 +114,3 @@ function nextQuestion(){
 //         answers.appendChild(list)
 //     }
 // }
-     displayQuestion()
