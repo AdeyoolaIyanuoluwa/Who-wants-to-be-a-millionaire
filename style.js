@@ -1,4 +1,4 @@
- var questionBank = [
+ const questionBank = [
     {
         question : 'In which year did &quot;Caravan Palace&quot; release their first album? ',
         option : ['2000','2008','2015','2004'],
@@ -16,46 +16,50 @@
     },
  ]
 
- let question = document.getElementById('question');
- let quizContainer = document.getElementById('quiz-container');
+//  let question = document.getElementById('question');
+//  let quizContainer = document.getElementById('quiz-container');
  let option0 = document.getElementById('option0')
  let option1 = document.getElementById('option1')
  let option2 = document.getElementById('option2')
  let option3 = document.getElementById('option3')
  let span = document.querySelectorAll('span')
- let i=0
+ let a= 0
 
  function displayQuestion(){
     for (let  a= 0;  a< span.length;a++){
         span[a].style.background = 'none';  
     }
-    question.innerHTML= questionBank[i].question;
-    option0.innerHTML = questionBank[i].option[0]
-    option1.innerHTML = questionBank[i].option[1]
-    option2.innerHTML = questionBank[i].option[2]
-    option3.innerHTML = questionBank[i].option[3]
+    question.innerHTML= questionBank[a].question;
+    option0.innerHTML = questionBank[a].option[0]
+    option1.innerHTML = questionBank[a].option[1]
+    option2.innerHTML = questionBank[a].option[2]
+    option3.innerHTML = questionBank[a].option[3]
 }
 function calcScore(e){
-        if(e.innerHTML=== questionBank[i].answer){
+        if(e.innerHTML=== questionBank[a].answer){
             document.getElementById(e.id).style.background = 'limegreen';
         }
         else{
             document.getElementById(e.id).style.background = 'tomato';
-            calcScore()
-
+               calcScore()
+                alert("game over")
         }
         setTimeout(nextQuestion,300)
     }
 
 function nextQuestion(){
-    if(i<questionBank.length-1){
-         i=i+1
+    if(a<questionBank.length-1){
+         a=a+1
          displayQuestion()
     }
     else{
         // points.innerHTML = score+ '/'+ questionBank.length;
         quizContainer.style.display = 'none'
     }
+}
+
+const fifty = ()=>{
+    alert ("i dey work")
 }
      displayQuestion()
 
