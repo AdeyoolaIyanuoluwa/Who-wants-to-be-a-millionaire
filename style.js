@@ -22,7 +22,7 @@
  let option1 = document.getElementById('option1')
  let option2 = document.getElementById('option2')
  let option3 = document.getElementById('option3')
- let span = document.querySelectorAll('span')
+ let span = document.querySelectorAll('button')
  let a = 0
 
 
@@ -58,7 +58,7 @@ const nextQuestion = () =>{
     }
     else{
         alert("Game over")
-        // quizContainer.style.display = 'none'
+        quizContainer.style.display = 'none'
     }
     
 }
@@ -68,7 +68,6 @@ const fifty = ()=>{
     option3.innerHTML = ""
         
 }
-
      displayQuestion()
 
 

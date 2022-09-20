@@ -1,3 +1,6 @@
+body{
+    background-image: url('game-background.jpg');
+}
 .quiz-container{
-    margin-top: 400px;
+    margin-top: 380px;
 }
