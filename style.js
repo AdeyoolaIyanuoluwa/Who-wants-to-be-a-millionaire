@@ -23,44 +23,52 @@
  let option2 = document.getElementById('option2')
  let option3 = document.getElementById('option3')
  let span = document.querySelectorAll('span')
- let a= 0
+ let a = 0
 
- function displayQuestion(){
-    for (let  a= 0;  a< span.length;a++){
-        span[a].style.background = 'none';  
-    }
+
+ const displayQuestion = () => {
+    questionBank.map((_,a)=>{
+        span[a].style.background = 'none'; 
+    })
     question.innerHTML= questionBank[a].question;
     option0.innerHTML = questionBank[a].option[0]
     option1.innerHTML = questionBank[a].option[1]
     option2.innerHTML = questionBank[a].option[2]
     option3.innerHTML = questionBank[a].option[3]
+
 }
-function calcScore(e){
+
+const calcScore =(e)=>{
         if(e.innerHTML=== questionBank[a].answer){
             document.getElementById(e.id).style.background = 'limegreen';
         }
         else{
             document.getElementById(e.id).style.background = 'tomato';
-               calcScore()
                 alert("game over")
+                calcScore()
+                    
         }
         setTimeout(nextQuestion,300)
     }
 
-function nextQuestion(){
-    if(a<questionBank.length-1){
+const nextQuestion = () =>{
+    if(a<questionBank.length){
          a=a+1
          displayQuestion()
     }
-    else{
-        // points.innerHTML = score+ '/'+ questionBank.length;
-        quizContainer.style.display = 'none'
-    }
+    // else if (a>questionBank.question){
+    //     alert("Game over")
+    //     // quizContainer.style.display = 'none'
+    // }
+    
 }
 
 const fifty = ()=>{
-    alert ("i dey work")
+    option2.innerHTML = ""
+    option3.innerHTML = ""
+        
 }
+
      displayQuestion()
 
 
@@ -119,3 +127,8 @@ const fifty = ()=>{
 //  let option3 = option3.value;
 //  let span = document.querySelectorAll('span')
 //  let i=0
+ // for (let  a= 0;  a< span.length;a++){
+    //     span[a].style.background = 'none';  
+    // }
+    // if(a<questionBank.length+1)
+    // points.innerHTML = score+ '/'+ questionBank.length;
