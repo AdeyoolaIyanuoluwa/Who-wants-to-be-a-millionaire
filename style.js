@@ -56,10 +56,10 @@ const nextQuestion = () =>{
          a=a+1
          displayQuestion()
     }
-    // else if (a>questionBank.question){
-    //     alert("Game over")
-    //     // quizContainer.style.display = 'none'
-    // }
+    else{
+        alert("Game over")
+        // quizContainer.style.display = 'none'
+    }
     
 }
 
