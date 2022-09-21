@@ -4,3 +4,11 @@ body{
 .quiz-container{
     margin-top: 380px;
 }
+.span{
+    width: 90%;
+    /* border: thin solid red; */
+    background-color: blue ;
+}
+/* button{
+    background-color: blue;
+} */

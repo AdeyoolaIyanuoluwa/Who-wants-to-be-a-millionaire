@@ -16,8 +16,7 @@
     },
  ]
 
-//  let question = document.getElementById('question');
-//  let quizContainer = document.getElementById('quiz-container');
+
  let option0 = document.getElementById('option0')
  let option1 = document.getElementById('option1')
  let option2 = document.getElementById('option2')
@@ -28,7 +27,7 @@
 
  const displayQuestion = () => {
     questionBank.map((_,a)=>{
-        span[a].style.background = 'none'; 
+        span[a].style.background = 'blue'; 
     })
     question.innerHTML= questionBank[a].question;
     option0.innerHTML = questionBank[a].option[0]
@@ -42,12 +41,16 @@ const calcScore =(e)=>{
         if(e.innerHTML=== questionBank[a].answer){
             document.getElementById(e.id).style.background = 'limegreen';
         }
-        else{
+        if(e.innerHTML!== questionBank[a].answer){
             document.getElementById(e.id).style.background = 'tomato';
-                alert("game over")
-                calcScore()
-                    
+            calcScore()
         }
+        // else{
+        //     document.getElementById(e.id).style.background = 'tomato';
+        //         alert("game over")
+        //         calcScore()
+                    
+        // }
         setTimeout(nextQuestion,300)
     }
 
@@ -56,10 +59,10 @@ const nextQuestion = () =>{
          a=a+1
          displayQuestion()
     }
-    else{
-        alert("Game over")
-        quizContainer.style.display = 'none'
-    }
+    // else{
+    //     alert("Game over")
+    //     // quizContainer.style.display = 'none'
+    // }
     
 }
 
@@ -131,3 +134,5 @@ const fifty = ()=>{
     // }
     // if(a<questionBank.length+1)
     // points.innerHTML = score+ '/'+ questionBank.length;
+    //  let question = document.getElementById('question');
+//  let quizContainer = document.getElementById('quiz-container');
