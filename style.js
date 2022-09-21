@@ -1,18 +1,23 @@
  const questionBank = [
     {
-        question : 'In which year did &quot;Caravan Palace&quot; release their first album? ',
-        option : ['2000','2008','2015','2004'],
-        answer : '2008'
+        question : 'Photoelectric effect is associated with?',
+        option : ['Non-Metals','Gases','Metals','Photosynthesis'],
+        answer : 'Metals'
     },
     {
-        question : 'Which of the following is not a prosecutor in the &quot;Ace Attorney&quot; video game series?',
-        option : ['Godot','Jake Marshall','Miles Edgeworth','Jacques Portsman'],
-        answer : 'Jake Marshall'
+        question : 'Which of these is not a JavaScript library?',
+        option : ['jQuery','Angular','React','Immutablejs'],
+        answer : 'Angular'
     },
     {
-        question : 'Which of his six wives was Henry VIII married to the longest?',
-        option : ['Anne Boleyn','Jane Seymour','Catherine Parr','Catherine of Aragon'],
-        answer : 'Catherine of Aragon'
+        question : 'Which is a CSS framework?',
+        option : ['Popper','Modernizr','Bootstrap','Sass'],
+        answer : 'Bootstrap'
+    },
+    {
+        question : 'Which language is closer to the hardware?',
+        option : ['Python','Hash','C++','JavaScript'],
+        answer : 'C++'
     },
  ]
 
@@ -51,7 +56,7 @@ const calcScore =(e)=>{
         //         calcScore()
                     
         // }
-        setTimeout(nextQuestion,300)
+        setTimeout(nextQuestion,3000)
     }
 
 const nextQuestion = () =>{

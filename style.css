@@ -2,12 +2,17 @@ body{
     background-image: url('game-background.jpg');
 }
 .quiz-container{
-    margin-top: 380px;
+    margin-top: 350px;
 }
 .span{
     width: 90%;
     /* border: thin solid red; */
     background-color: blue ;
+}
+#question{
+    background-color: blue ;
+    text-align: center;
+    
 }
 /* button{
     background-color: blue;
