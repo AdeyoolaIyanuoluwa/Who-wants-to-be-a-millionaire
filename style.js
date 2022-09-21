@@ -19,6 +19,11 @@
         option : ['Python','Hash','C++','JavaScript'],
         answer : 'C++'
     },
+    {
+        question : 'Who is the creator of Python?',
+        option : ['Guido van Rossium','Brendan Eich','Google Inc','Dan Abrahmov'],
+        answer : 'Guido van Rossium'
+    },
  ]
 
 
@@ -72,8 +77,9 @@ const nextQuestion = () =>{
 }
 
 const fifty = ()=>{
-    option2.innerHTML = ""
+    option0.innerHTML = ""
     option3.innerHTML = ""
+    btn.innerHTML = `<img src="50-50-used.png" alt="">`
         
 }
      displayQuestion()
