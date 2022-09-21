@@ -34,6 +34,7 @@
  let span = document.querySelectorAll('button')
  let a = 0
 let song = new Audio("correct-answer.mp3")
+let song1 = new Audio("wrong-answer-audio.mp3")
 
  const displayQuestion = () => {
     questionBank.map((_,a)=>{
@@ -55,8 +56,7 @@ const calcScore =(e)=>{
         }
         if(e.innerHTML!== questionBank[a].answer){
             document.getElementById(e.id).style.background = 'tomato';
-                    // setTimeout(nextQuestion,6000)
-                    // window.location.href = "gameover.html"
+            song1.play()
         }
     }
 
