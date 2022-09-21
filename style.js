@@ -33,7 +33,7 @@
  let option3 = document.getElementById('option3')
  let span = document.querySelectorAll('button')
  let a = 0
-
+let song = new Audio("correct-answer.mp3")
 
  const displayQuestion = () => {
     questionBank.map((_,a)=>{
@@ -50,18 +50,14 @@
 const calcScore =(e)=>{
         if(e.innerHTML=== questionBank[a].answer){
             document.getElementById(e.id).style.background = 'limegreen';
+            song.play()
         }
         if(e.innerHTML!== questionBank[a].answer){
             document.getElementById(e.id).style.background = 'tomato';
-            calcScore()
+                    // setTimeout(nextQuestion,6000)
+                    // window.location.href = "gameover.html"
         }
-        // else{
-        //     document.getElementById(e.id).style.background = 'tomato';
-        //         alert("game over")
-        //         calcScore()
-                    
-        // }
-        setTimeout(nextQuestion,3000)
+        setTimeout(nextQuestion,6000)
     }
 
 const nextQuestion = () =>{
