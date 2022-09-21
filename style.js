@@ -51,13 +51,13 @@ const calcScore =(e)=>{
         if(e.innerHTML=== questionBank[a].answer){
             document.getElementById(e.id).style.background = 'limegreen';
             song.play()
+            setTimeout(nextQuestion,6000)
         }
         if(e.innerHTML!== questionBank[a].answer){
             document.getElementById(e.id).style.background = 'tomato';
                     // setTimeout(nextQuestion,6000)
                     // window.location.href = "gameover.html"
         }
-        setTimeout(nextQuestion,6000)
     }
 
 const nextQuestion = () =>{
