@@ -6,14 +6,9 @@ body{
 }
 .span{
     width: 90%;
-    /* border: thin solid red; */
-    background-color: blue ;
 }
 #question{
     background-color: blue ;
     text-align: center;
     
 }
-/* button{
-    background-color: blue;
-} */
