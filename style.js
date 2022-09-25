@@ -33,8 +33,8 @@
  let option3 = document.getElementById('option3')
  let span = document.querySelectorAll('button')
  let a = 0
-let song = new Audio("correct-answer.mp3")
-let song1 = new Audio("wrong-answer-audio.mp3")
+let song = new Audio("./sound/correct-answer.mp3")
+let song1 = new Audio("./sound/wrong-answer-audio.mp3")
 
  const displayQuestion = () => {
     allQuestion.map((_,a)=>{
@@ -77,7 +77,8 @@ const nextQuestion = () =>{
 const fifty = ()=>{
     option0.innerHTML = "....."
     option3.innerHTML = "....."
-    btn.innerHTML = `<img src="50-50-used.png" alt="">`
+    btn.innerHTML = `<img src="./images/50-50-used.png" alt="">`
+    btn.onclick = ""
         
 }
      displayQuestion()
