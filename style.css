@@ -11,6 +11,9 @@ body{
 }
 #question{
     background-color: blue ;
-    text-align: center;
-    
+    text-align: center;  
+}
+.money{
+    height: 100px;
+    right: 500px;
 }
