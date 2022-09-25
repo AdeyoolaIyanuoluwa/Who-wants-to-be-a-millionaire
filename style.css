@@ -4,7 +4,7 @@ body{
    background-size: cover;
 }
 .quiz-container{
-    margin-top: 300px;
+    margin-top: 320px;
 }
 .span{
     width: 90%;
@@ -13,7 +13,8 @@ body{
     background-color: blue ;
     text-align: center;  
 }
-.money{
+/* .money{
+    position: relative;
     height: 100px;
-    right: 500px;
-}
+    left: 100px;
+} */
