@@ -1,4 +1,4 @@
- const questionBank = [
+ const allQuestion = [
     {
         question : 'Photoelectric effect is associated with?',
         option : ['Non-Metals','Gases','Metals','Photosynthesis'],
@@ -37,24 +37,24 @@ let song = new Audio("correct-answer.mp3")
 let song1 = new Audio("wrong-answer-audio.mp3")
 
  const displayQuestion = () => {
-    questionBank.map((_,a)=>{
+    allQuestion.map((_,a)=>{
         span[a].style.background = 'blue'; 
     })
-    question.innerHTML= questionBank[a].question;
-    option0.innerHTML = questionBank[a].option[0]
-    option1.innerHTML = questionBank[a].option[1]
-    option2.innerHTML = questionBank[a].option[2]
-    option3.innerHTML = questionBank[a].option[3]
+    question.innerHTML= allQuestion[a].question;
+    option0.innerHTML = allQuestion[a].option[0]
+    option1.innerHTML = allQuestion[a].option[1]
+    option2.innerHTML = allQuestion[a].option[2]
+    option3.innerHTML = allQuestion[a].option[3]
 
 }
 
 const checkAnswer =(e)=>{
-        if(e.innerHTML=== questionBank[a].answer){
+        if(e.innerHTML=== allQuestion[a].answer){
             document.getElementById(e.id).style.background = 'limegreen';
             song.play()
             setTimeout(nextQuestion,6000)
         }
-        if(e.innerHTML!== questionBank[a].answer){
+        if(e.innerHTML!== allQuestion[a].answer){
             document.getElementById(e.id).style.background = 'tomato';
             song1.play()
             // setTimeout(ans, 6000);
@@ -67,7 +67,7 @@ const checkAnswer =(e)=>{
     // }
 
 const nextQuestion = () =>{
-    if(a<questionBank.length){
+    if(a<allQuestion.length){
          a=a+1
          displayQuestion()
     }
@@ -75,8 +75,8 @@ const nextQuestion = () =>{
 }
 
 const fifty = ()=>{
-    option0.innerHTML = ""
-    option3.innerHTML = ""
+    option0.innerHTML = "....."
+    option3.innerHTML = "....."
     btn.innerHTML = `<img src="50-50-used.png" alt="">`
         
 }
