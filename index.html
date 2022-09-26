@@ -10,17 +10,20 @@
 </head>
 <body>
 
-    <!-- <h1>MILLIONAIRE</h1> -->
-    <button onclick="fifty()" id="btn" class="ms-5 mt-5"><img src="./images/50-50.png" alt=""></button>
-    <!-- <div>
-        <img src="./images/money-removebg-preview.png" class="money" alt="">
-    </div> -->
+   
+    <div>
+        <button onclick="fifty()" id="btn" class="ms-5 mt-5"><img src="./images/50-50.png" alt=""></button>
+        <span><img src="./images/phone-a-friend.png" alt=""></span>
+        <span><img src="./images/ask-the-audience.png" alt=""></span>
+        <p><img src="./images/money-removebg-preview.png" alt=""></p>
+    </div>
+
     <div class="quiz-container">
         <div class="questions">
             <h2 id="question" class="text-white fs-1 rounded-pill"></h2>
                 <ol type="A" class="text-white row m-auto fw-bold fs-4">
 
-                     <li class="option col-6 mb-4">
+                     <li class="option col-6 mb-4" id="option">
                         <button class=" btn span text-white fs-3 fw-bold" id="option0" onclick="checkAnswer(this)"></button>
                      </li>
                      <li class="option col-6 mb-4">

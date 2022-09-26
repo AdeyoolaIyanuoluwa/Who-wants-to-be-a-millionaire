@@ -8,6 +8,7 @@ body{
 }
 .span{
     width: 90%;
+    /* background-color: blue !important; */
 }
 #question{
     background-color: blue ;
