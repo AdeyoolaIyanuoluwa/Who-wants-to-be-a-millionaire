@@ -39,6 +39,7 @@
 let song = new Audio("./sound/correct-answer.mp3")
 let song1 = new Audio("./sound/wrong-answer-audio.mp3")
 let song2 = new Audio("./sound/lets-play.mp3")
+let song3 = new Audio("./sound/50-50_sound.mp3")
 
  const displayQuestion = () => {
     allQuestion.map((_,a)=>{
@@ -85,7 +86,7 @@ const fifty = ()=>{
     option3.innerHTML = "....."
     btn.innerHTML = `<img src="./images/50-50-used.png" alt="">`
     btn.onclick = ""
-        
+    song3.play()
 }
  
 const phoneAfriend = ()=>{
@@ -101,7 +102,7 @@ const started=()=>{
     window.location.href = "game.html"
 }
 const playSong=()=>{
-    // song2.play()
+    song2.play()
 }
 
 displayQuestion()
