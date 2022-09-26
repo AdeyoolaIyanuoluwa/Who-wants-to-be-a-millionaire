@@ -18,6 +18,6 @@ body{
     height: 250px;
     margin-left: 60px;
 }
-/* .image-div{
-    float: right;
-} */
+.image-div{
+   padding-left: 70%;
+}
