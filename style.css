@@ -11,7 +11,8 @@ body{
 }
 #question{
     background-color: blue ;
-    text-align: center;  
+    text-align: center; 
+    padding: 20px; 
 }
 /* .money{
     position: relative;
