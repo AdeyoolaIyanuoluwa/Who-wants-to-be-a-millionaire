@@ -29,3 +29,8 @@ body{
     height: 50px;
     width: 50%;
 }
+.STARTED{
+    background-color: #b68a48 !important ;
+    color: white;
+    margin-top: 53vh;
+}
