@@ -21,3 +21,8 @@ body{
 .image-div{
    padding-left: 70%;
 }
+#display{
+    background-color: red;
+    height: 50px;
+    width: 50%;
+}

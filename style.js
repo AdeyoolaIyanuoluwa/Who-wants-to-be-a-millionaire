@@ -81,4 +81,14 @@ const fifty = ()=>{
     btn.onclick = ""
         
 }
+ 
+const phoneAfriend = ()=>{
+        friendImg.innerHTML= `<img src="./images/phone-a-friend-used.png" alt="">`
+        display.innerHTML = `<button onclick="friend()">Call a friend......</button>`
+        friendImg.onclick = ""
+}
+// const friend=()=>{
+//     display.innerText="FRIEND CURRENTLY UNAVAILABLE"
+//     display.onclick = ""
+// }
      displayQuestion()
