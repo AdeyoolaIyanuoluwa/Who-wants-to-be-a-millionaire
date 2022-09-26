@@ -4,11 +4,10 @@ body{
    background-size: cover;
 }
 .quiz-container{
-    margin-top: 320px;
+    margin-top: 40px;
 }
 .span{
     width: 90%;
-    /* background-color: blue !important; */
 }
 #question{
     background-color: blue ;
@@ -16,10 +15,9 @@ body{
     padding: 20px; 
 }
 .money-image{
-    height: 200px;
+    height: 250px;
     margin-left: 60px;
 }
-.image-div{
-    /* float: right; */
-   align-content: flex-end;
-}
+/* .image-div{
+    float: right;
+} */
