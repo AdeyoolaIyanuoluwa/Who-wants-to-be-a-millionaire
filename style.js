@@ -35,6 +35,7 @@
  let a = 0
 let song = new Audio("./sound/correct-answer.mp3")
 let song1 = new Audio("./sound/wrong-answer-audio.mp3")
+let song2 = new Audio("./sound/lets-play.mp3")
 
  const displayQuestion = () => {
     allQuestion.map((_,a)=>{
@@ -94,6 +95,8 @@ const audience = ()=>{
 const started=()=>{
     window.location.href = "game.html"
 }
+
+
 displayQuestion()
 
 
