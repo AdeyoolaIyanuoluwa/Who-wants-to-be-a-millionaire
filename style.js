@@ -84,11 +84,16 @@ const fifty = ()=>{
  
 const phoneAfriend = ()=>{
         friendImg.innerHTML= `<img src="./images/phone-a-friend-used.png" alt="">`
-        display.innerHTML = `<button onclick="friend()">Call a friend......</button>`
+        // display.innerHTML = `<button onclick="friend()">Call a friend......</button>`
         friendImg.onclick = ""
 }
+const audience = ()=>{
+        Audience.innerHTML= `<img src="./images/ask-the-audience-used.png" alt="">`
+        // display.innerHTML = `<button onclick="friend()">Call a friend......</button>`
+        friendImg.onclick = ""
+}
+displayQuestion()
 // const friend=()=>{
 //     display.innerText="FRIEND CURRENTLY UNAVAILABLE"
 //     display.onclick = ""
 // }
-     displayQuestion()
