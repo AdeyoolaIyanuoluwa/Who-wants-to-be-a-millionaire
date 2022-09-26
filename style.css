@@ -15,8 +15,11 @@ body{
     text-align: center; 
     padding: 20px; 
 }
-/* .money{
-    position: relative;
-    height: 100px;
-    left: 100px;
-} */
+.money-image{
+    height: 200px;
+    margin-left: 60px;
+}
+.image-div{
+    /* float: right; */
+   align-content: flex-end;
+}
