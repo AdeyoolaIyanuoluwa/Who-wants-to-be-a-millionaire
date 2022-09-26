@@ -6,9 +6,9 @@ body{
    background-repeat: no-repeat;
    background-size: cover;
 }
-.quiz-container{
-    margin-top: 40px;
-}
+/* .quiz-container{
+    margin-bottom: 20px;
+} */
 .span{
     width: 90%;
 }
@@ -25,9 +25,11 @@ body{
    padding-left: 70%;
 }
 #display{
-    background-color: red;
+    background-color: #b68a48;
     height: 50px;
-    width: 50%;
+    width: 15%;
+    color: white;
+    border: thick solid white;
 }
 .STARTED{
     background-color: #b68a48 !important ;

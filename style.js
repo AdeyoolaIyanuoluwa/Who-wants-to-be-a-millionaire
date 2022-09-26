@@ -32,7 +32,10 @@
  let option2 = document.getElementById('option2')
  let option3 = document.getElementById('option3')
  let span = document.querySelectorAll('button')
+ var points = document.getElementById('display');
  let a = 0
+ let score = 0
+
 let song = new Audio("./sound/correct-answer.mp3")
 let song1 = new Audio("./sound/wrong-answer-audio.mp3")
 let song2 = new Audio("./sound/lets-play.mp3")
@@ -51,6 +54,7 @@ let song2 = new Audio("./sound/lets-play.mp3")
 
 const checkAnswer =(e)=>{
         if(e.innerHTML=== allQuestion[a].answer){
+            score+=100
             document.getElementById(e.id).style.background = 'limegreen';
             song.play()
             setTimeout(nextQuestion,6000)
@@ -71,6 +75,7 @@ const nextQuestion = () =>{
     if(a<allQuestion.length){
          a=a+1
          displayQuestion()
+         points.innerHTML = `$ ${score}`;
     }
     
 }
@@ -95,7 +100,9 @@ const audience = ()=>{
 const started=()=>{
     window.location.href = "game.html"
 }
-
+const playSong=()=>{
+    // song2.play()
+}
 
 displayQuestion()
 
