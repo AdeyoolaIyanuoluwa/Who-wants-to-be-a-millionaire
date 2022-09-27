@@ -5,12 +5,14 @@ body{
     background-image: url('./images/game-background.jpg');
    background-repeat: no-repeat;
    background-size: cover;
+   overflow: hidden;
 }
 /* .quiz-container{
     margin-bottom: 20px;
 } */
 .span{
     width: 90%;
+    font-size: 30px !important;
 }
 #question{
     background-color: blue ;
@@ -45,12 +47,29 @@ body{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 77vh;
     }
     #question{
-        width: 85%;
-        padding: 8px;
-        font-size: 25px;
-        margin-left: 20px;
+        width: 80%;
+        padding: 14px;
+        font-size: 1.1em;
+        margin-left: 0px;
+    }
+    .quiz-container{
+        margin-top: 110px;
+    }
+    .span{
+        width: 75%;
+        font-size: 15px !important;
+    }
+    .image-div{
+        padding-left: 10%;
+     }
+     #display{
+        height: 50px;
+        width: 25%;
+        position: relative;
+        top: 100px;
+        /* padding-top: 50px; */
     }
 }
