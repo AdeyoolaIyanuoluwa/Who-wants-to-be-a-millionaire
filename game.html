@@ -11,27 +11,27 @@
 <body onload="playSong()">
 
     <div class="image-div">
-        <button onclick="fifty()" id="btn" class="ms-5 mt-5"><img src="./images/50-50.png" alt=""></button>
+        <button onclick="fifty()" id="btn" class="ms-5 mt-4"><img src="./images/50-50.png" alt=""></button>
         <span onclick="phoneAfriend()" id="friendImg"><img src="./images/phone-a-friend.png" alt=""></span>
         <span onclick="audience()" id="Audience"><img src="./images/ask-the-audience.png" alt=""></span>
-        <span><img class="money-image mt-3" src="./images/money-removebg-preview.png" alt=""></span>
+        <span><img class="money-image mt-3 d-none d-sm-block" src="./images/money-removebg-preview.png" alt=""></span>
     </div>
         <div id="display" class="rounded-pill fs-3 fw-bold text-center ms-5">Amount</div>
     <div class="quiz-container">
         <div class="questions">
-            <h2 id="question" class="text-white fs-1 rounded-pill"></h2>
-                <ol type="A" class="text-white row m-auto fw-bold fs-4 ms-5">
+            <h2 id="question" class="text-white  rounded-pill"></h2>
+                <ol type="A" class="text-white row m-auto fw-bold fs-4 ms-lg-5">
 
-                     <li class="option col-6 mb-4" id="option">
+                     <li class="option col-lg-6 col-sm-12 mb-4" id="option">
                         <button class=" btn span text-white fs-3 fw-bold" id="option0" onclick="checkAnswer(this)"></button>
                      </li>
-                     <li class="option col-6 mb-4">
+                     <li class="option col-lg-6 col-sm-12 mb-4">
                         <button class=" btn span text-white fs-3 fw-bold" id="option1" onclick="checkAnswer(this)"></button>
                     </li>
-                    <li class="option col-6">
+                    <li class="option col-lg-6 col-sm-12 mb-4">
                         <button class=" btn span text-white fs-3 fw-bold" id="option2" onclick="checkAnswer(this)"></button>
                     </li>
-                    <li class="option col-6">
+                    <li class="option col-lg-6 col-sm-12">
                         <button class="btn span text-white fs-3 fw-bold" id="option3" onclick="checkAnswer(this)"></button>
                     </li>
                 </ol>
