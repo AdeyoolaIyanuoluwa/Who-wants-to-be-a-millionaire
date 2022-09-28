@@ -121,6 +121,7 @@ const walkAway=()=>{
     window.location.href = "index.html"
     // location.reload()
 }
+const reload = () =>{}
 
 
 displayQuestion()

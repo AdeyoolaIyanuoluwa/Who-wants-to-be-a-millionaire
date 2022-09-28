@@ -130,4 +130,26 @@ color: white;
         position: relative;
         top: 180px;
     }
+    #overLay{
+        width: 60vh;
+        height: 60vh;
+        margin-top: 160px;
+        color: white;
+        }
+        .text{
+            padding-top: 90px;
+            font-weight: bold;
+            font-size: 68px;
+        }
+    .overlay{
+        width: 60vh;
+       height: 60vh;
+       margin-top: 200px;
+     }
+     .text1{
+         padding-top: 186px;
+         font-weight: bold;
+         font-size: 68px;
+         animation: rotate 1s infinite;
+     }
 }
