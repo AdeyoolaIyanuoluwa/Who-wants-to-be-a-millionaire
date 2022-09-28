@@ -43,7 +43,7 @@ let song3 = new Audio("./sound/50-50_sound.mp3")
 
  const displayQuestion = () => {
     allQuestion.map((_,a)=>{
-        span[a].style.background = 'blue'; 
+        span[a].style.background = '#090863'; 
     })
     question.innerHTML= allQuestion[a].question;
     option0.innerHTML = allQuestion[a].option[0]
