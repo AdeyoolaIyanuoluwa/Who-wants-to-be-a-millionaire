@@ -64,7 +64,7 @@ const checkAnswer =(e)=>{
             document.getElementById(e.id).style.background = 'tomato';
             song1.play()
             setTimeout(() => {
-                window.location.href = "gameover.html"
+                window.location.href = "over.html"
             }, 3000);
             // overLay.innerHTML = `Congratulatons you have won $ ${price}`
         }
