@@ -1,6 +1,6 @@
 /* index.html */
 .body{
-    background-image: url('welcome-background-mobile.jpg');
+    background-image: url('./images/welcome-background-mobile.jpg');
 }
 .STARTED{
     background-color: #b68a48 !important ;
