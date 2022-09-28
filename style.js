@@ -32,9 +32,9 @@
  let option2 = document.getElementById('option2')
  let option3 = document.getElementById('option3')
  let span = document.querySelectorAll('button')
- var points = document.getElementById('display');
+ let points = document.getElementById('display');
  let a = 0
- let price = 0
+ let price = 1000
 
 let song = new Audio("./sound/correct-answer.mp3")
 let song1 = new Audio("./sound/wrong-answer-audio.mp3")
@@ -55,7 +55,7 @@ let song3 = new Audio("./sound/50-50_sound.mp3")
 
 const checkAnswer =(e)=>{
         if(e.innerHTML=== allQuestion[a].answer){
-            price+=100
+            price+=1000
             document.getElementById(e.id).style.background = 'limegreen';
             song.play()
             setTimeout(nextQuestion,300)
@@ -66,13 +66,18 @@ const checkAnswer =(e)=>{
             setTimeout(() => {
                 window.location.href = "gameover.html"
             }, 3000);
-            overLay.innerHTML = `Congratulatons you have won $ ${price}`
+            // overLay.innerHTML = `Congratulatons you have won $ ${price}`
         }
     }
-
-    // const ans = () =>{
-
-    // }
+    
+const gameOver = () =>{
+        overLay.innerHTML = `
+        <h1 class="text-light text">GAME OVER</h1>
+        <h1><i>Congratulations</i></h1>
+        <h1 ><i>you have won</i></h1>
+        <h1 class="text-success fw-bold">$ ${price}</h1>`
+    }
+    
 
 const nextQuestion = () =>{
     if(a<allQuestion.length - 1){
@@ -115,13 +120,7 @@ const walkAway=()=>{
     window.location.href = "index.html"
     // location.reload()
 }
-const gameOver=()=>{
-    
-    overLay.innerHTML = `
-    <h1 class="text-light text">GAME OVER</h1>
-    <h1><i>Congratulations</i></h1>
-    <h1 ><i>you have won a grand price of</i> <br> <b class="text-success">$ ${price}</b></h1>`
-}
+
 
 displayQuestion()
 
