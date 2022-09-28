@@ -76,7 +76,8 @@ const gameOver = () =>{
         <h1 class="text-light text">GAME OVER</h1>
         <h1><i>Congratulations</i></h1>
         <h1 ><i>you have won</i></h1>
-        <h1 class="text-success fw-bold">$ ${price}</h1>`
+        <h1 class="text-success fw-bold">$ ${price}</h1>
+        <img class="restart-img" onclick="restart()" src="./images/restart-removebg-preview.png" height="55px" alt="">`
     }
     
 
@@ -121,7 +122,9 @@ const walkAway=()=>{
     window.location.href = "index.html"
     // location.reload()
 }
-const reload = () =>{}
+const restart = () =>{
+    window.location.href = "index.html"
+}
 
 
 displayQuestion()

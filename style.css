@@ -62,12 +62,12 @@ body{
     background-image: url('./images/welcome-background-img.jpg');
 }
 #overLay{
-width: 68vh;
-height: 68vh;
-border-radius: 100%;
-background-color: #090863;
-margin-top: 160px;
-color: white;
+    width: 68vh;
+    height: 68vh;
+    border-radius: 100%;
+    background-color: #090863;
+    margin-top: 160px;
+    color: white;
 }
 .text{
     padding-top: 90px;
@@ -88,6 +88,9 @@ color: white;
     padding-top: 186px;
     font-weight: bold;
     font-size: 68px;
+    
+}
+.restart-img{
     animation: rotate 1s infinite;
 }
 
@@ -149,6 +152,5 @@ color: white;
          padding-top: 160px;
          font-weight: bold;
          font-size: 50px;
-         animation: rotate 1s infinite;
      }
 }
