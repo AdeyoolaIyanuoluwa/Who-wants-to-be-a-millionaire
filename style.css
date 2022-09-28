@@ -8,7 +8,7 @@ body{
    overflow: hidden;
 }
 .game-over{
-    
+    background-image: url('./images/game-over.jpg');
 }
 #btn{
     background-color: rgb(2, 0, 0) !important;
