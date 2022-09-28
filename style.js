@@ -1,18 +1,8 @@
  const allQuestion = [
     {
-        question : 'Photoelectric effect is associated with?',
-        option : ['Non-Metals','Gases','Metals','Photosynthesis'],
-        answer : 'Metals'
-    },
-    {
-        question : 'Which of these is not a JavaScript library?',
-        option : ['jQuery','Angular','React','Immutablejs'],
-        answer : 'Angular'
-    },
-    {
-        question : 'Which is a CSS framework?',
-        option : ['Popper','Modernizr','Bootstrap','Sass'],
-        answer : 'Bootstrap'
+        question : '"The largest planet is?"',
+        option : ['Saturn','Earth','Jupiter','Uranus'],
+        answer : 'Jupiter'
     },
     {
         question : 'Which language is closer to the hardware?',
@@ -20,9 +10,19 @@
         answer : 'C++'
     },
     {
-        question : 'Who is the creator of Python?',
-        option : ['Guido van Rossium','Brendan Eich','Google Inc','Dan Abrahmov'],
-        answer : 'Guido van Rossium'
+        question : 'Photoelectric effect is associated with?',
+        option : ['Non-Metals','Metals','Gases','Photosynthesis'],
+        answer : 'Metals'
+    },
+    {
+        question : 'Which currency is used in Spain?',
+        option : ['Dollar','Naira','Euro','Pound sterling'],
+        answer : 'Euro'
+    },
+    {
+        question : 'What is the boiling point temperature (water)?',
+        option : ['100 °C','50 °C','150 °C','200 °C'],
+        answer : '100 °C'
     },
  ]
 
@@ -58,7 +58,7 @@ const checkAnswer =(e)=>{
             price+=1000
             document.getElementById(e.id).style.background = 'limegreen';
             song.play()
-            setTimeout(nextQuestion,300)
+            setTimeout(nextQuestion,6000)
         }
         if(e.innerHTML!== allQuestion[a].answer){
             document.getElementById(e.id).style.background = 'tomato';
@@ -66,18 +66,16 @@ const checkAnswer =(e)=>{
             setTimeout(() => {
                 window.location.href = "over.html"
             }, 3000);
-            // overLay.innerHTML = `Congratulatons you have won $ ${price}`
         }
     }
     
 const gameOver = () =>{
-        price+=5000
+        price+=4000
         overLay.innerHTML = `
         <h1 class="text-light text">GAME OVER</h1>
         <h1><i>Congratulations</i></h1>
         <h1 ><i>you have won</i></h1>
-        <h1 class="text-success fw-bold">$ ${price}</h1>
-        <img class="restart-img" onclick="restart()" src="./images/restart-removebg-preview.png" height="55px" alt="">`
+        <h1 class="text-success fw-bold">$ ${price}</h1>`
     }
     
 
