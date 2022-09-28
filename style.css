@@ -37,9 +37,10 @@ body{
     color: white;
     border: thick solid white;
 }
-/* .walk-away{
-    margin-left: 65%;
-} */
+.walk-away{
+    margin-left: 50%;
+    background-color: ;
+}
 .STARTED{
     background-color: #b68a48 !important ;
     color: white;
