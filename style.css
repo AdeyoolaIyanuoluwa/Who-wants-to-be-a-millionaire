@@ -6,7 +6,7 @@
     background-color: #b68a48 !important ;
     color: white;
     margin-top: 53vh;
-    animation: rotate 1s infinite;
+    /* animation: rotate 1s infinite; */
 }
 @keyframes rotate {
     0%{scale: 100%;}
