@@ -105,7 +105,7 @@ const playSong=()=>{
     song2.play()
 }
 const walkAway=()=>{
-    alert("i dey work")
+    location.reload()
 }
 
 displayQuestion()
