@@ -63,8 +63,10 @@ const checkAnswer =(e)=>{
         if(e.innerHTML!== allQuestion[a].answer){
             document.getElementById(e.id).style.background = 'tomato';
             song1.play()
-            // setTimeout(ans, 6000);
-            // window.location.href = "gameover.html"
+            setTimeout(() => {
+                window.location.href = "gameover.html"
+            }, 3000);
+            
         }
     }
 
