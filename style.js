@@ -66,7 +66,7 @@ const checkAnswer =(e)=>{
             setTimeout(() => {
                 window.location.href = "gameover.html"
             }, 3000);
-            
+            overLay.innerHTML = `Congratulatons you have won $ ${price}`
         }
     }
 
@@ -75,14 +75,15 @@ const checkAnswer =(e)=>{
     // }
 
 const nextQuestion = () =>{
-    if(a<allQuestion.length){
+    if(a<allQuestion.length - 1){
          a=a+1
          displayQuestion()
          points.innerHTML = `$ ${price}`;
     }
     else{
-        // window.location.href = "gameover.html"
-        overLay.innerHTML = `Congratulatons you have won $ ${price}`
+        setTimeout(() => {
+            window.location.href = "gameover.html"
+        }, 2000);
     }
     
 }
@@ -113,6 +114,13 @@ const playSong=()=>{
 const walkAway=()=>{
     window.location.href = "index.html"
     // location.reload()
+}
+const gameOver=()=>{
+    
+    overLay.innerHTML = `
+    <h1 class="text-light text">GAME OVER</h1>
+    <h1><i>Congratulations</i></h1>
+    <h1 ><i>you have won a grand price of</i> <br> <b class="text-success">$ ${price}</b></h1>`
 }
 
 displayQuestion()
