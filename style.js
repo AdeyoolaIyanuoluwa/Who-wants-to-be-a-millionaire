@@ -105,7 +105,8 @@ const playSong=()=>{
     song2.play()
 }
 const walkAway=()=>{
-    location.reload()
+    window.location.href = "index.html"
+    // location.reload()
 }
 
 displayQuestion()
