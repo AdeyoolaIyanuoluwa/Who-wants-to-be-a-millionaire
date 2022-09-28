@@ -7,6 +7,9 @@ body{
    background-size: cover;
    overflow: hidden;
 }
+#btn{
+    background-color: rgb(2, 0, 0) !important;
+}
 /* .quiz-container{
     margin-bottom: 20px;
 } */
@@ -17,7 +20,7 @@ body{
 #question{
     background-color: blue ;
     text-align: center; 
-    padding: 20px; 
+    padding: 20px;  
     font-size: 45px;
 }
 .money-image{
@@ -34,6 +37,9 @@ body{
     color: white;
     border: thick solid white;
 }
+/* .walk-away{
+    margin-left: 65%;
+} */
 .STARTED{
     background-color: #b68a48 !important ;
     color: white;
@@ -56,7 +62,7 @@ body{
         margin-left: 0px;
     }
     .quiz-container{
-        margin-top: 110px;
+        margin-top: 180px;
     }
     .span{
         width: 80%;
@@ -68,9 +74,9 @@ body{
      }
      #display{
         height: 50px;
-        width: 25%;
+        width: 35%;
         position: relative;
-        top: 100px;
+        top: 180px;
         /* padding-top: 50px; */
     }
 }

@@ -11,12 +11,15 @@
 <body onload="playSong()">
 
     <div class="image-div">
-        <button onclick="fifty()" id="btn" class="ms-lg-5 mt-4"><img src="./images/50-50.png" alt=""></button>
+        <button onclick="fifty()" id="btn" class="ms-lg-5 mt-4 bt"><img src="./images/50-50.png" alt=""></button>
         <span onclick="phoneAfriend()" id="friendImg"><img src="./images/phone-a-friend.png" alt=""></span>
         <span onclick="audience()" id="Audience"><img src="./images/ask-the-audience.png" alt=""></span>
         <span><img class="money-image mt-3 d-none d-sm-block" src="./images/money-removebg-preview.png" alt=""></span>
     </div>
-        <div id="display" class="rounded-pill fs-3 fw-bold text-center ms-lg-5">Amount</div>
+        <div class="">
+            <div id="display" class="rounded-pill fs-3 fw-bold text-center ms-lg-5">Amount</div>
+            <span class="walk-away bg-danger" onclick="walkAway()">Walk away</span>
+        </div>
     <div class="quiz-container">
         <div class="questions">
             <h2 id="question" class="text-white  rounded-pill"></h2>
