@@ -58,7 +58,7 @@ const checkAnswer =(e)=>{
             price+=100
             document.getElementById(e.id).style.background = 'limegreen';
             song.play()
-            setTimeout(nextQuestion,6000)
+            setTimeout(nextQuestion,300)
         }
         if(e.innerHTML!== allQuestion[a].answer){
             document.getElementById(e.id).style.background = 'tomato';
@@ -81,9 +81,7 @@ const nextQuestion = () =>{
          points.innerHTML = `$ ${price}`;
     }
     else{
-        setTimeout(() => {
-            window.location.href = "gameover.html"
-        }, 1000);
+        // window.location.href = "gameover.html"
         overLay.innerHTML = `Congratulatons you have won $ ${price}`
     }
     
