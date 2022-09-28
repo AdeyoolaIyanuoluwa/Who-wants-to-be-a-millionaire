@@ -62,7 +62,14 @@ body{
     background-image: url('./images/welcome-background-img.jpg');
 }
 .overlay{
-
+width: 68vh;
+height: 68vh;
+border-radius: 100%;
+background-color: #090863;
+margin-top: 160px;
+}
+.text{
+    padding-top: 90px;
 }
 
 

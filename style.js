@@ -34,7 +34,7 @@
  let span = document.querySelectorAll('button')
  var points = document.getElementById('display');
  let a = 0
- let score = 0
+ let price = 0
 
 let song = new Audio("./sound/correct-answer.mp3")
 let song1 = new Audio("./sound/wrong-answer-audio.mp3")
@@ -55,7 +55,7 @@ let song3 = new Audio("./sound/50-50_sound.mp3")
 
 const checkAnswer =(e)=>{
         if(e.innerHTML=== allQuestion[a].answer){
-            score+=100
+            price+=100
             document.getElementById(e.id).style.background = 'limegreen';
             song.play()
             setTimeout(nextQuestion,6000)
@@ -78,7 +78,13 @@ const nextQuestion = () =>{
     if(a<allQuestion.length){
          a=a+1
          displayQuestion()
-         points.innerHTML = `$ ${score}`;
+         points.innerHTML = `$ ${price}`;
+    }
+    else{
+        setTimeout(() => {
+            window.location.href = "gameover.html"
+        }, 1000);
+        overLay.innerHTML = `Congratulatons you have won $ ${price}`
     }
     
 }
