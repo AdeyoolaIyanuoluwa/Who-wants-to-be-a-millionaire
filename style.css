@@ -1,11 +1,14 @@
 .body{
-    background-image: url('./images/NCS_Wh');
+    background-image: url('welcome-background-mobile.jpg');
 }
 body{
     background-image: url('./images/game-background.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    overflow: hidden;
+}
+.game-over{
+    
 }
 #btn{
     background-color: rgb(2, 0, 0) !important;
@@ -56,7 +59,7 @@ body{
 
 @media screen and (max-width:1024px) {
     body{
-        background-image: url('welcome-background-mobile.jpg');
+        background-image: url('./images/million.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
