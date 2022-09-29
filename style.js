@@ -70,7 +70,7 @@ const checkAnswer =(e)=>{
     }
     
 const gameOver = () =>{
-        price+=4000
+        price+=5000
         overLay.innerHTML = `
         <h1 class="text-light text">GAME OVER</h1>
         <h1><i>Congratulations</i></h1>
