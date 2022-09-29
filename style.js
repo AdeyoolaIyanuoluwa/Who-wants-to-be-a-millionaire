@@ -72,7 +72,7 @@ const checkAnswer =(e)=>{
 const gameOver = () =>{
         price+=5000
         overLay.innerHTML = `
-        <h1 class="text"><i>Congratulations🎉🎉</i></h1>
+        <h1 class="text"><i>Congratulations<br>🎉🎉</i></h1>
         <h1 ><i>you have won</i></h1>
         <h1 class="text-success fw-bold">$ ${price}</h1>`
     }
