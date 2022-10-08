@@ -92,6 +92,9 @@ const checkAnswer =(e)=>{
                 window.location.href = "over.html"
             }, 3000);
         }
+        // else if( ){
+
+        // }
     }
     
 const gameOver = () =>{
