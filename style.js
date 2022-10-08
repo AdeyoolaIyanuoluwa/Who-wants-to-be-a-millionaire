@@ -29,35 +29,10 @@
         option : ['9','7','5','10'],
         answer : '7'
     },
-    {
-        question : '"The largest planet is?"',
-        option : ['Saturn','Earth','Jupiter','Uranus'],
-        answer : 'Jupiter'
-    },
-    {
-        question : 'Photoelectric effect is associated with?',
-        option : ['Non-Metals','Gases','Metals','Photosynthesis'],
-        answer : 'Metals'
-      },
-      {
-        question : 'Which currency is used in Spain?',
-        option : ['Dollar','Euro','Naira','Pound sterling'],
-        answer : 'Euro'
-      },
       {
         question : 'Flourine element is known as?',
         option : ['Ester','Ethanol','Halogen','Rare gas'],
         answer : 'Halogen'
-      },
-      {
-        question : 'What is the boiling point temperature (water)?',
-        option : ['100 °C','50 °C','150 °C','200 °C'],
-        answer : '100 °C'
-      },
-      {
-        question : 'Which language is closer to the hardware?',
-        option : ['Python','C++','Hash','JavaScript'],
-        answer : 'C++'
       },
       {
         question : 'What is a baby rabbit called?',
@@ -120,7 +95,7 @@ const checkAnswer =(e)=>{
     }
     
 const gameOver = () =>{
-        price+=5000
+        price+=9000
         overLay.innerHTML = `
         <h1 class="text"><i>Congratulations<br>🎉🎉</i></h1>
         <h1 ><i>you have won</i></h1>
