@@ -24,6 +24,7 @@
         option : ['100 °C','50 °C','150 °C','200 °C'],
         answer : '100 °C'
     },
+
  ]
 
 
@@ -42,9 +43,12 @@ let song2 = new Audio("./sound/lets-play.mp3")
 let song3 = new Audio("./sound/50-50_sound.mp3")
 
  const displayQuestion = () => {
-    allQuestion.map((_,a)=>{
+    // allQuestion.map((_,a)=>{
+    //     span[a].style.background = 'none'; 
+    // })
+    for (let a = 0; a < span.length; a++) {
         span[a].style.background = '#090863'; 
-    })
+    }
     question.innerHTML= allQuestion[a].question;
     option0.innerHTML = allQuestion[a].option[0]
     option1.innerHTML = allQuestion[a].option[1]
