@@ -90,7 +90,7 @@ const checkAnswer =(e)=>{
             song1.play()
             setTimeout(() => {
                 window.location.href = "over.html"
-            }, 3000);
+            }, 1000);
         }
         // else if( ){
 
