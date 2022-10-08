@@ -24,7 +24,56 @@
         option : ['100 °C','50 °C','150 °C','200 °C'],
         answer : '100 °C'
     },
-
+    {
+        question : 'How many colors are in a rainbow',
+        option : ['9','7','5','10'],
+        answer : '7'
+    },
+    {
+        question : '"The largest planet is?"',
+        option : ['Saturn','Earth','Jupiter','Uranus'],
+        answer : 'Jupiter'
+    },
+    {
+        question : 'Photoelectric effect is associated with?',
+        option : ['Non-Metals','Gases','Metals','Photosynthesis'],
+        answer : 'Metals'
+      },
+      {
+        question : 'Which currency is used in Spain?',
+        option : ['Dollar','Euro','Naira','Pound sterling'],
+        answer : 'Euro'
+      },
+      {
+        question : 'Flourine element is known as?',
+        option : ['Ester','Ethanol','Halogen','Rare gas'],
+        answer : 'Halogen'
+      },
+      {
+        question : 'What is the boiling point temperature (water)?',
+        option : ['100 °C','50 °C','150 °C','200 °C'],
+        answer : '100 °C'
+      },
+      {
+        question : 'Which language is closer to the hardware?',
+        option : ['Python','C++','Hash','JavaScript'],
+        answer : 'C++'
+      },
+      {
+        question : 'What is a baby rabbit called?',
+        option : ['Puppy','Kitten','Cat','Kid'],
+        answer : 'China'
+      },
+      {
+        question : 'International Day against Women violence is celebrated each year on?',
+        option : ['16 November','29 November','25 November','10 November'],
+        answer : '25 November'
+      },
+      {
+        question : 'Which is the largest country by population?',
+        option : ['United States of America','Nigeria','Japan','China'],
+        answer : 'China'
+      },
  ]
 
 
@@ -43,9 +92,6 @@ let song2 = new Audio("./sound/lets-play.mp3")
 let song3 = new Audio("./sound/50-50_sound.mp3")
 
  const displayQuestion = () => {
-    // allQuestion.map((_,a)=>{
-    //     span[a].style.background = 'none'; 
-    // })
     for (let a = 0; a < span.length; a++) {
         span[a].style.background = '#090863'; 
     }
